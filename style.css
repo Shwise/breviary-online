@@ -1,0 +1,114 @@
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color: #ecf0f1;
+  font-family: Trebuchet, Arial, sans-serif;
+  text-align: center;
+
+  font-display: fallback;
+  background-color: #212121;
+}
+
+.btn {
+  position: relative;
+
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+
+  background-color: #F44336;
+  color: #eeeeee;
+
+  font-family: 'Uncial Antiqua', cursive;
+
+  transition: .4s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #B71C1C;
+  transform-origin:center;
+	transform:scale(1.1, 1.1);
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 1px 24px;
+  font-size: 40pt;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: #B71C1C;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.error {
+  font-family: 'Inconsolata', monospace;
+  font-size: 30pt;
+  color: #eeeeee;
+  width: 100%;
+  display: block;
+  margin-top:50%
+  text-align: center;
+}

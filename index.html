@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Breviary</title>
+
+    <link rel='manifest' href='manifest.json'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#212121">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <meta name="apple-mobile-web-app-title" content="Breviary">
+    <link rel="apple-touch-startup-image" href="ios/414x896.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)">
+    <link rel="apple-touch-startup-image" href="ios/414x896-xr.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="ios/launch-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="ios/launch-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="ios/launch-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="ios/launch-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="ios/launch-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="ios/launch-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="ios/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+
+    <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+        .then(function(registration) {
+          console.log('Registration successful, scope is:', registration.scope);
+        })
+        .catch(function(error) {
+          console.log('Service worker registration failed, error:', error);
+        });
+      }
+    </script>
+  </head>
+
+<body ontouchstart=””>
+
+<script>
+
+var today = new Date();
+
+var month = ("0" + (today.getMonth() + 1)).slice(-2);
+
+var date = ("0" + today.getDate()).slice(-2);
+
+var hour = today.getHours();
+
+// 0 for
+
+if (hour < 5) {
+  hour = "1-Matutinum.html"
+}
+else if (hour < 6) {
+  hour = "2-Laudes.html"
+}
+else if (hour < 9) {
+  hour = "3-Prima.html"
+}
+else if (hour < 12) {
+  hour = "4-Tertia.html"
+}
+else if (hour < 15) {
+  hour = "5-Sexta.html"
+}
+else if (hour < 18) {
+  hour = "6-Nona.html"
+}
+else if (hour < 21) {
+  hour = "7-Vespera.html"
+}
+else {
+  hour = "8-Completorium.html"
+}
+
+var hour_link = "Text/" + month + "-" + date + "-2019-" + hour
+
+function brevFunction() {
+      window.location.href = hour_link;
+};
+
+</script>
+
+<button onclick="brevFunction()" class="btn"><span>Oremus<span></button>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+body {line-height: 200%; background-color: #212121; color: #eeeeee; font-size: 13pt; font-family: 'Source Serif Pro', serif;}
+
+a {color: #B71C1C;}
+.rg {color: #CFD8DC;}
+.rb {color: #2196F3;}
+.rd {color: #F44336;}
+.m {color: #F44336;}
+.cen {text-align: center;}
+.c {font-weight: bold; font-size:150%; color:#F44336;}
+.s {font-size: 82%; font-style: italic;}
+.w {font-weight: 600; font-size: 82%; color: #B71C1C;}
+.ri{color: #F44336; font-style: italic;}
+i {color: #F44336;font-size: 113%;}
+b {color: #F44336;font-size: 113%;font-style: italic;font-weight: bold; padding-right: 0.2em;}
+em {color: #F44336;font-size: 63%;}
+i.a {color: #F44336;font-size: 150%;font-style: italic;font-weight: bold; padding-right: 0.1em;}
+i.r {color: #F44336;font-size: 63%;}
