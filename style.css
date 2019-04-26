@@ -5,6 +5,8 @@ html, body {
 }
 
 body {
+  position: absolute;
+  top: calc(50% - 20pt - 12px);
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -21,8 +23,6 @@ body {
 .btn {
   display: block;
   margin: auto;
-  margin-top: calc(50vh - 20pt - 12px);
-  margin-top: calc(var(--vh, 1vh) * 50 - 20pt - 12px);
 
   overflow: hidden;
 
@@ -79,7 +79,6 @@ body {
   font-family: 'Inconsolata', monospace;
   font-size: 30pt;
   width: 100%;
-  top: 50%;
   overflow: hidden;
   text-align: center;
   color: #eeeeee;
@@ -91,8 +90,8 @@ body {
 }
 
 .ios-popup {
-  position: absolute;
-  display: none;
+  position: fixed;
+  display: table;
   margin-left: 5%;
   width: 90%;
   font-size: 12pt;
@@ -116,8 +115,8 @@ body {
 	pointer-events: none;
 	border-color: rgba(255, 255, 255, 0);
 	border-top-color: #ffffff;
-	border-width: 2vh;
-	margin-left: -2vh;
+	border-width: 15pt;
+	margin-left: -15pt;
 }
 
 .left {
