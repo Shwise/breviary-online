@@ -118,8 +118,8 @@ body {
 	pointer-events: none;
 	border-color: rgba(255, 255, 255, 0);
 	border-top-color: #ffffff;
-	border-width: 15pt;
-	margin-left: -15pt;
+	border-width: 10pt;
+	margin-left: -10pt;
 }
 
 .left {
