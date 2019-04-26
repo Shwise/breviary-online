@@ -6,7 +6,7 @@ html, body {
 
 body {
   position: absolute;
-  top: calc(50% - 20pt - 12px);
+  top: 50%;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -36,6 +36,8 @@ body {
   font-family: 'Uncial Antiqua', cursive;
 
   transition: .4s;
+
+  margin-top: calc(-20pt - 12px);
 }
 
 .btn:hover, .btn:focus {
