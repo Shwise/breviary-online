@@ -92,6 +92,7 @@ body {
 }
 
 .ios-popup {
+  padding-top: 4px;
   position: fixed;
   display: none;
   margin-left: 5%;
