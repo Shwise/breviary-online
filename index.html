@@ -41,55 +41,64 @@
     </script>
   </head>
 
-<body ontouchstart=””>
+  <body ontouchstart=””>
 
-<script>
+    <script>
 
-var today = new Date();
+      var today = new Date();
 
-var month = ("0" + (today.getMonth() + 1)).slice(-2);
+      var month = ("0" + (today.getMonth() + 1)).slice(-2);
 
-var date = ("0" + today.getDate()).slice(-2);
+      var date = ("0" + today.getDate()).slice(-2);
 
-var hour = today.getHours();
+      var hour = today.getHours();
 
-// 0 for
+      // 0 for
 
-if (hour < 5) {
-  hour = "1-Matutinum.html"
-}
-else if (hour < 6) {
-  hour = "2-Laudes.html"
-}
-else if (hour < 9) {
-  hour = "3-Prima.html"
-}
-else if (hour < 12) {
-  hour = "4-Tertia.html"
-}
-else if (hour < 15) {
-  hour = "5-Sexta.html"
-}
-else if (hour < 18) {
-  hour = "6-Nona.html"
-}
-else if (hour < 21) {
-  hour = "7-Vespera.html"
-}
-else {
-  hour = "8-Completorium.html"
-}
+      if (hour < 5) {
+        hour = "1-Matutinum.html"
+      }
+      else if (hour < 6) {
+        hour = "2-Laudes.html"
+      }
+      else if (hour < 9) {
+        hour = "3-Prima.html"
+      }
+      else if (hour < 12) {
+        hour = "4-Tertia.html"
+      }
+      else if (hour < 15) {
+        hour = "5-Sexta.html"
+      }
+      else if (hour < 18) {
+        hour = "6-Nona.html"
+      }
+      else if (hour < 21) {
+        hour = "7-Vespera.html"
+      }
+      else {
+        hour = "8-Completorium.html"
+      }
 
-var hour_link = "Text/" + month + "-" + date + "-2019-" + hour
+      var hour_link = "Text/" + month + "-" + date + "-2019-" + hour
 
-function brevFunction() {
-      window.location.href = hour_link;
-};
+      function brevFunction() {
+        window.location.href = hour_link;
+      };
 
-</script>
+    </script>
 
-<button onclick="brevFunction()" class="btn"><span>Oremus<span></button>
+    <button onclick="brevFunction()" class="btn"><span>Oremus<span></button>
 
-</body>
+    <table class="ios-popup">
+      <tr>
+        <td><img class="left" src="ios/download.png"></td>
+        <td><span>To install:<br>Tap <img class="inline" src="ios/share.png"> and then Add to Homescreen.</span></td>
+      </tr>
+    </table>
+
+    <script src="ios/ios-install-prompt.js"></script>
+
+  </body>
 
 </html>
