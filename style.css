@@ -92,7 +92,7 @@ body {
 
 .ios-popup {
   position: absolute;
-  display: table;
+  display: none;
   margin-left: 5%;
   width: 90%;
   font-size: 12pt;
