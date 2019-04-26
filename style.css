@@ -22,7 +22,7 @@ body {
   display: block;
   margin: auto;
   margin-top: calc(50vh - 20pt - 12px);
-  margin-top: calc(var(--vh, 50vh) - 20pt - 12px);
+  margin-top: calc(var(--vh, 1vh) * 50 - 20pt - 12px);
 
   overflow: hidden;
 
