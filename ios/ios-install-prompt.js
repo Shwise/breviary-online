@@ -12,7 +12,5 @@ if (isIos() && !isInStandaloneMode()) {
 function launch_prompt() {
   let iOSpopup = document.querySelector(".ios-popup");
   iOSpopup.style.display = "table";
-  iOSpopup.addEventListener("click", () => {
-    iOSpopup.style.display = "none";
   });
 }
