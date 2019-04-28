@@ -1,11 +1,11 @@
 const filesToCache = [
    'index.html',
-   'error.html',
    'style.css',
+   'favicon-32x32.png',
+   'favicon-16x16.png',
    'Styles/s.css',
    'Text/s.css',
-   'favicon-32x32.png',
-   'favicon-16x16.png'
+   'error.html',
 ];
 
 var brevCache = 'pages-cache';

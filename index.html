@@ -28,65 +28,12 @@
     <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-        .then(function(registration) {
-          console.log('Registration successful, scope is:', registration.scope);
-        })
-        .catch(function(error) {
-          console.log('Service worker registration failed, error:', error);
-        });
-      }
-    </script>
+
+    <script src="service-worker-install.js"></script>
+
   </head>
 
   <body ontouchstart=””>
-
-    <script>
-
-      var today = new Date();
-
-      var month = ("0" + (today.getMonth() + 1)).slice(-2);
-
-      var date = ("0" + today.getDate()).slice(-2);
-
-      var hour = today.getHours();
-
-      // 0 for
-
-      if (hour < 5) {
-        hour = "1-Matutinum.html"
-      }
-      else if (hour < 6) {
-        hour = "2-Laudes.html"
-      }
-      else if (hour < 9) {
-        hour = "3-Prima.html"
-      }
-      else if (hour < 12) {
-        hour = "4-Tertia.html"
-      }
-      else if (hour < 15) {
-        hour = "5-Sexta.html"
-      }
-      else if (hour < 18) {
-        hour = "6-Nona.html"
-      }
-      else if (hour < 21) {
-        hour = "7-Vespera.html"
-      }
-      else {
-        hour = "8-Completorium.html"
-      }
-
-      var hour_link = "Text/" + month + "-" + date + "-2019-" + hour
-
-      function brevFunction() {
-        window.location.href = hour_link;
-      };
-
-    </script>
 
     <button onclick="brevFunction()" class="btn"><span>Oremus<span></button>
 
@@ -98,6 +45,7 @@
     </table>
 
     <script src="ios/ios-install-prompt.js"></script>
+    <script src="calculate-hour.js"></script>
 
   </body>
 </html>
