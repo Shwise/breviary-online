@@ -2,7 +2,7 @@ const filesToCache = [
    'index.html',
    'calculate-hour.js',
    'service-worker-install.js',
-   'service-workers.js',
+   'service-worker.js',
    'style.css',
    'favicon-32x32.png',
    'favicon-16x16.png',
