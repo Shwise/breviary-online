@@ -1,8 +1,12 @@
 const filesToCache = [
    'index.html',
+   'calculate-hour.js',
+   'service-worker-install.js',
+   'service-workers.js',
    'style.css',
    'favicon-32x32.png',
    'favicon-16x16.png',
+   'ios/ios-install-prompt.js',
    'Styles/s.css',
    'Text/s.css',
    'error.html',
