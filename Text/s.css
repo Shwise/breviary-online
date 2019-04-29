@@ -10,7 +10,7 @@
   width: device-width;
 }
 
-body {line-height: 200%; background-color: #212121; color: #eeeeee; font-size: 13pt; font-family: 'Source Serif Pro', serif;}
+body {max-width: 960px; margin: auto; line-height: 200%; background-color: #212121; color: #eeeeee; font-size: 13pt; font-family: 'Source Serif Pro', serif;}
 
 a {color: #B71C1C;}
 .rg {color: #CFD8DC;}
